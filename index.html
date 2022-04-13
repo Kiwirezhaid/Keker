@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Браузерный JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="block">
+            просто текст
+        </div> -->
+        <button id="btn">Открыть модальное окно</button>
+        <form action="">
+            <input type="number">
+            <input type="button" value="Угадать число">
+        </form>
+
+        <div class="slider1">
+            <div class="slider1__content">
+                <span class="slider1__title">Картинка 1</span>
+            </div>
+        </div>
+
+        <div class="slider2">
+            <ul class="slider2__list">
+                <li class="slider2__item">
+                    <img class="slider2__img" src="img/1.webp" alt="">
+                    <p class="slider2__title">Картинка 1</p>
+                </li>
+                <li class="slider2__item">
+                    <img class="slider2__img" src="img/2.webp" alt="">
+                    <p class="slider2__title">Картинка 2</p>
+                </li>
+                <li class="slider2__item">
+                    <img class="slider2__img" src="img/3.webp" alt="">
+                    <p class="slider2__title">Картинка 3</p>
+                </li>
+                <li class="slider2__item">
+                    <img class="slider2__img" src="img/4.webp" alt="">
+                    <p class="slider2__title">Картинка 4</p>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="slider3">
+            <input class="slider3__radio" type="radio" name="slider-btn" id="slider-btn-prev">
+            <label class="slider3__btn slider3__btn--prev"  for="slider-btn-prev">&lt;</label>
+            <input class="slider3__radio" type="radio" name="slider-btn" id="slider-btn-next">
+            <label class="slider3__btn slider3__btn--next" for="slider-btn-next">&gt;</label>
+            <ul class="slider3__list">
+                <li class="slider3__item">
+                    <img class="slider3__img" src="img/1.webp" alt="">
+                    <p class="slider3__title">Картинка 1</p>
+                </li>
+                <li class="slider3__item">
+                    <img class="slider3__img" src="img/2.webp" alt="">
+                    <p class="slider3__title">Картинка 2</p>
+                </li>
+                <li class="slider3__item">
+                    <img class="slider3__img" src="img/3.webp" alt="">
+                    <p class="slider3__title">Картинка 3</p>
+                </li>
+                <li class="slider3__item">
+                    <img class="slider3__img" src="img/4.webp" alt="">
+                    <p class="slider3__title">Картинка 4</p>
+                </li>
+            </ul>            
+        </div> -->
+
+        <div class="slider4" >            
+            <ul class="slider4__list" id="slider4"> 
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/1.webp" alt="">
+                    <p class="slider4__title">Картинка 1</p>
+                </li>
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/2.webp" alt="">
+                    <p class="slider4__title">Картинка 2</p>
+                </li>
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/3.webp" alt="">
+                    <p class="slider4__title">Картинка 3</p>
+                </li>
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/4.webp" alt="">
+                    <p class="slider4__title">Картинка 4</p>
+                </li>
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/1.webp" alt="">
+                    <p class="slider4__title">Картинка 5</p>
+                </li>
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/2.webp" alt="">
+                    <p class="slider4__title">Картинка 6</p>
+                </li>
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/3.webp" alt="">
+                    <p class="slider4__title">Картинка 7</p>
+                </li>
+                <li class="slider4__item">
+                    <img class="slider4__img" src="img/4.webp" alt="">
+                    <p class="slider4__title">Картинка 8</p>
+                </li>
+            </ul>
+            <button class="slider4__btn slider4__btn--prev" id="slider4-btn-prev">&lt;</button>
+            <button class="slider4__btn slider4__btn--next" id="slider4-btn-next">&gt;</button>
+        </div>
+        <br>
+        <br>
+        <br><br><br><br><br>
+        
+    </div>
+
+    
+
+   
+<!-- Задание 1: В файле js у вас есть загаданное число 
+    (в  пределах 1 - 10). 
+    если пользовать отгадал его, то выводить 
+    зеленое сообщение "Угадали"
+    если пользовать не отгадал его, то выводить 
+    красное сообщение "Не угадали
+    Ссобщение выводить в виде полосы вверху окна
+    Через 3 с полосу скрываем"    
+-->
+
+    <div id="modal" class="modal__wrapper">
+        <div class="modal">
+            <p>Это модальное окно</p>
+            <span class="close" id="modal-close">X</span>
+        </div>
+    </div>
+
+</body>
+</html>
